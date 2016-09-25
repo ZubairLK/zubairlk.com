@@ -1,0 +1,2 @@
+# zubairlk.com
+my blog
