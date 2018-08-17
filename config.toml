@@ -1,0 +1,33 @@
+baseurl = "https://www.zubairlk.com/"
+title = "ZubairLK's penseive"
+copyright = "Copyright &copy; 2018 - Zubair Lutfullah Kakakhel"
+canonifyurls = true
+theme = "kiera"
+
+paginate = 3
+
+summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
+
+[author]
+    name = "Zubair Lutfullah Kakakhel"
+    github = "https://github.com/ZubairLK/"
+    gitlab = ""
+    linkedin = "https://www.linkedin.com/in/zubair-lutfullah-kakakhel-61375822/"
+    facebook = ""
+    twitter = "https://twitter.com/ZubairLKK"
+    instagram = ""
+
+[params]
+    tagline = "Notes, thoughts, ideas ..."
+
+[[menu.main]]
+    name = "Home" #Name in the navigation bar
+    weight = 10 #The larger the weight, the more on the right this item will be
+    url = "/" #URL address
+[[menu.main]]
+    name = "Posts"
+    weight = 20
+    url = "/posts/"
+
