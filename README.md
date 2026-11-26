@@ -18,10 +18,14 @@ The earlier Hugo blog remains in `content/`, `public/`, `archetypes/` and `theme
 
 ## Analytics
 
-Google Analytics tracks this site in the `zubairlk.com` GA4 property under the AZKY Tech Labs account. Reporting uses UAE time (GMT+04:00) and AED.
+Google Analytics tracks this site in the `zubairlk.com` GA4 property under the separate Zubair Kakakhel account. Reporting uses UAE time (GMT+04:00) and AED.
 
+- Account: `417527083` (Zubair Kakakhel)
+- Property: `565973169` (`zubairlk.com`)
 - Web stream: `16421777837`
 - Measurement ID: `G-PWCH5SVFGZ`
 - Google tag: `GTM-W4S5DZGT`
+
+The existing property was moved from AZKY Tech Labs on 26 November 2026, preserving its data, stream and tracking IDs. [Open Analytics](https://analytics.google.com/analytics/web/#/a417527083p565973169/realtime/overview).
 
 The Google-provided tag is installed once in the head of `site/index.html` and `site/404.html`. Enhanced measurement is enabled for page views, scrolls and outbound clicks. Manage destinations and measurement settings in Google Analytics / Google Tag Manager rather than installing a second tag.
