@@ -207,7 +207,50 @@
   text-decoration-color: currentColor;
 }
 
+.coral .faq {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.coral .faq-list article {
+  padding-block: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.coral .faq-list article:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.coral .faq-list article:last-child {
+  padding-bottom: 0;
+}
+
+.coral .faq-list h3 {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.coral .faq-list p {
+  margin-top: 14px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
 @media (max-width: 760px) {
+  .coral .faq {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .coral .faq-list h3 {
+    font-size: 20px;
+  }
+
   .coral .whatsapp-bubble {
     width: 56px;
     height: 56px;
