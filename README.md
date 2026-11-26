@@ -16,6 +16,8 @@ The page uses WOFF2 fonts, with the main heading and body fonts preloaded. One M
 
 Booking opens the GST Calendly event. Both WhatsApp links open the same chat; the floating button is green with a white icon and a visible label.
 
+The portrait has responsive AVIF copies at 800, 1120 and 1400px, with the original full-resolution WebP as a fallback. Its preload and `<source>` must use identical `srcset`/`sizes` values so the browser downloads only one candidate. The sizes account for the existing `object-fit: cover` crop and zoom. Latin font subsets retain the original glyphs and metrics; the complete fonts remain as fallbacks for other characters. Keep the preloads pointed at the subsets.
+
 The earlier Hugo blog remains in `content/`, `public/`, `archetypes/` and `themes/` for reference and is not included in the Netlify publish directory.
 
 ## Analytics
