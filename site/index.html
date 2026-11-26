@@ -3,11 +3,31 @@
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link rel="preload" as="image" type="image/avif" imagesrcset="/assets/optimized/zubair-portrait-800.avif 800w, /assets/optimized/zubair-portrait-1120.avif 1120w, /assets/optimized/zubair-portrait-1400.avif 1400w" imagesizes="(max-width: 450px) calc((100vw - 40px) * 1.71), (max-width: 760px) 700px, (max-width: 1050px) calc((100vw - 109px) * 0.89), 850px" fetchpriority="high"/>
 <!-- Google tag: zubairlk.com -->
-<script defer fetchpriority="low" src="https://www.googletagmanager.com/gtm.js?id=GTM-W4S5DZGT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
+  // Let the first screen finish loading before analytics uses the connection
+  // and main thread. A visitor's first interaction starts it immediately.
+  (() => {
+    let started = false;
+    const events = ['pointerdown', 'keydown'];
+    const start = () => {
+      if (started) return;
+      started = true;
+      events.forEach(event => window.removeEventListener(event, start));
+      const tag = document.createElement('script');
+      tag.async = true;
+      tag.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-W4S5DZGT';
+      document.head.appendChild(tag);
+    };
+    events.forEach(event => window.addEventListener(event, start, {once: true, passive: true}));
+    window.addEventListener('load', () => {
+      if ('requestIdleCallback' in window) window.requestIdleCallback(start, {timeout: 1000});
+      else window.setTimeout(start, 0);
+    }, {once: true});
+  })();
 </script>
 <meta content="index,follow,max-image-preview:large" name="robots"/><title>AI Consultant in Dubai, UAE | Zubair Kakakhel</title><link rel="preload" href="/fonts/dm-serif-1-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"/><link rel="preload" href="/fonts/manrope-variable-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"/><link href="/fonts.css?v=4" rel="stylesheet"/><link href="/layout.css?v=1" rel="stylesheet"/><link href="/site.css?v=1" rel="stylesheet"/><script defer="" src="/testimonials.js?v=1"></script><script defer="" src="/interactions.js?v=1"></script><meta content="AI consulting, training and development in Dubai and across the UAE. Practical help with AI tools, agents and custom software." name="description"/><meta content="#ffffff" name="theme-color"/><meta content="AI Consultant in Dubai, UAE | Zubair Kakakhel" property="og:title"/><meta content="AI consulting, training and development in Dubai and across the UAE. Practical help with AI tools, agents and custom software." property="og:description"/><meta content="website" property="og:type"/><meta content="https://zubairlk.com/" property="og:url"/><meta content="Zubair Kakakhel" property="og:site_name"/><meta content="https://zubairlk.com/assets/zubair-share.jpg" property="og:image"/><meta content="Zubair Kakakhel, AI consultant in Dubai" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><link href="https://zubairlk.com/" rel="canonical"/><link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://zubairlk.com/#zubair", "url": "https://zubairlk.com/", "name": "Zubair Lutfullah Kakakhel", "alternateName": "Zubair Kakakhel", "jobTitle": "AI consultant and software engineer", "image": "https://zubairlk.com/assets/zubair-share.jpg", "homeLocation": {"@type": "Place", "name": "Dubai, United Arab Emirates"}, "knowsAbout": ["AI consulting", "AI training", "AI agents", "Workflow automation", "Custom software development"], "sameAs": ["https://www.linkedin.com/in/zubairbuilds/", "https://www.youtube.com/@ZubairBuilds"]}</script></head><body class="coral"><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header container"><a aria-label="Zubair, home" class="wordmark" href="#">ZLK<span>.</span></a><nav aria-label="Main navigation"><a href="#work">Work with me</a><a href="#about">About</a><a href="#contact">Let’s talk</a></nav></header><main id="main"><section aria-labelledby="intro-title" class="hero container">

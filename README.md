@@ -18,6 +18,8 @@ Booking opens the GST Calendly event. Both WhatsApp links open the same chat; th
 
 The portrait has responsive AVIF copies at 800, 1120 and 1400px, with the original full-resolution WebP as a fallback. Its preload and `<source>` must use identical `srcset`/`sizes` values so the browser downloads only one candidate. The sizes account for the existing `object-fit: cover` crop and zoom. Latin font subsets retain the original glyphs and metrics; the complete fonts remain as fallbacks for other characters. Keep the preloads pointed at the subsets.
 
+Google Analytics queues its initialization immediately. The existing Google tag loads once during the first idle period after page load (with a 1-second idle timeout), or immediately on the first pointer/keyboard interaction. This keeps its download and execution out of the initial rendering work; very short visits that leave before the tag loads may not be recorded. The tag and measurement destination are unchanged.
+
 The earlier Hugo blog remains in `content/`, `public/`, `archetypes/` and `themes/` for reference and is not included in the Netlify publish directory.
 
 ## Analytics
