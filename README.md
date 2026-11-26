@@ -12,6 +12,8 @@ python -m http.server 4174 --directory site
 
 Edit `site/index.html` for copy, `site/site.css` for Coral styling and `site/layout.css` for the layout. Fonts and images are hosted locally. Videos load a privacy-enhanced YouTube iframe only after pressing play.
 
+The page uses WOFF2 fonts, with the main heading and body fonts preloaded. Sized WebP copies of client logos and personal photos live in `site/assets/optimized/`; the original files are kept in `site/assets/`. Keep image dimensions in the HTML aligned with each file, and preserve the full-resolution hero portrait.
+
 Booking opens the GST Calendly event. Both WhatsApp links open the same chat; the floating button is green with a white icon and a visible label.
 
 The earlier Hugo blog remains in `content/`, `public/`, `archetypes/` and `themes/` for reference and is not included in the Netlify publish directory.
