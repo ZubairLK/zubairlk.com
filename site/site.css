@@ -1,0 +1,236 @@
+/* White pages, alternating beige sections, and coral accents. */
+.coral {
+  --paper: #fff;
+  --soft: #f7f5f0;
+  --line: #dedbd3;
+  background: var(--paper);
+}
+
+.coral .hero-portrait {
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+}
+
+.coral .client-section {
+  background: var(--soft);
+}
+
+.coral .client-strip {
+  padding-block: 60px 70px;
+  border-top: 0;
+}
+
+.coral .work {
+  border-top: 0;
+}
+
+.coral .work-accent {
+  color: var(--accent-ink);
+}
+
+.coral .service-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.coral .service-icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.coral .about,
+.coral .personal {
+  background: var(--soft);
+  border-top: 0;
+}
+
+.coral .review-bar {
+  background: var(--paper);
+  border-color: var(--line);
+}
+
+.coral .social-links a,
+.coral .media-platform,
+.coral .social-person > svg,
+.coral .linkedin-card > a,
+.coral .hero .quiet-link {
+  color: var(--accent-ink);
+}
+
+.coral .social-links a,
+.coral .linkedin-card > a {
+  text-decoration: underline;
+  text-decoration-color: #ba3e2860;
+  text-decoration-thickness: 1px;
+}
+
+.coral .social-links a:hover,
+.coral .linkedin-card > a:hover {
+  text-decoration-color: currentColor;
+}
+
+.coral .play-icon {
+  color: var(--accent-ink);
+}
+
+.coral .video-trigger:hover .play-icon {
+  background: var(--accent-ink);
+  color: #fff;
+}
+
+.coral .project-list article {
+  border-top-color: var(--accent);
+}
+
+.coral .contact-icon {
+  background: var(--accent);
+  color: #fff;
+}
+
+.coral .contact-stop {
+  color: var(--accent);
+}
+
+.coral .whatsapp-bubble {
+  position: fixed;
+  right: calc(24px + env(safe-area-inset-right, 0px));
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 4px 18px #25262326;
+  transition: background .2s;
+}
+
+.coral .whatsapp-bubble svg {
+  width: 29px;
+  height: 29px;
+  fill: currentColor;
+}
+
+.coral .whatsapp-bubble:hover {
+  background: #1da851;
+}
+
+.coral .whatsapp-bubble-label {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
+  padding: 8px 12px;
+  border: 1px solid #e7e7e3;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  box-shadow: 0 3px 14px #25262314;
+}
+
+.coral .site-footer {
+  padding-right: 80px;
+}
+
+.coral .profile-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 64px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.coral .profile-fact-group {
+  padding: 30px 34px 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.coral .fact-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.coral .fact-heading > svg {
+  width: 26px;
+  height: 26px;
+  color: var(--accent-ink);
+  flex-shrink: 0;
+}
+
+.coral .fact-heading h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -.5px;
+}
+
+.coral .profile-facts ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  list-style: none;
+}
+
+.coral .profile-facts li,
+.coral .profile-facts li + li {
+  margin: 0;
+  padding: 13px 0;
+  border-top: 1px solid #ebe8e1;
+}
+
+.coral .profile-facts a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #ba3e2860;
+}
+
+.coral .profile-facts a:hover {
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 760px) {
+  .coral .whatsapp-bubble {
+    width: 56px;
+    height: 56px;
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .coral .client-strip {
+    padding-block: 42px 48px;
+  }
+
+  .coral .profile-facts {
+    gap: 22px;
+    margin-top: 48px;
+  }
+
+  .coral .profile-fact-group {
+    padding: 26px 24px 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .coral .profile-facts {
+    grid-template-columns: 1fr;
+  }
+}
