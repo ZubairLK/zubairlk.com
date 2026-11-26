@@ -255,10 +255,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-block: 22px;
+  padding-block: 18px;
   cursor: pointer;
   list-style: none;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -272,7 +272,7 @@
   flex-shrink: 0;
   width: 24px;
   color: var(--accent-ink);
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -287,8 +287,8 @@
 
 .coral .faq-list p {
   margin: 0;
-  padding: 0 48px 24px 0;
-  font-size: 17px;
+  padding: 0 48px 20px 0;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--muted);
 }
@@ -310,7 +310,7 @@
   }
 
   .coral .faq-list summary {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .coral .whatsapp-bubble {
