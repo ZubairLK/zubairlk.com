@@ -1,6 +1,6 @@
 [build]
-  command = "echo 'Static site: no build required'"
-  publish = "site"
+  command = "node scripts/build.mjs"
+  publish = "dist"
 
 [[redirects]]
   from = "https://www.zubairlk.com/*"

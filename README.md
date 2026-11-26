@@ -2,7 +2,7 @@
 
 Zubair Kakakhel's personal website: AI consulting, training and software development in Dubai.
 
-The production site is plain HTML, CSS and JavaScript in `site/`. Netlify publishes that directory from the `master` branch. There is no framework build or server dependency.
+The production site is plain HTML, CSS and JavaScript in `site/`. Netlify runs `node scripts/build.mjs` and publishes `dist/` from the `master` branch. The dependency-free build copies the site and inlines its CSS to avoid blocking the first paint on separate stylesheet requests. There is no framework or server dependency.
 
 ## Local preview
 
@@ -12,7 +12,7 @@ python -m http.server 4174 --directory site
 
 Edit `site/index.html` for copy, `site/site.css` for Coral styling and `site/layout.css` for the layout. Fonts and images are hosted locally. Videos load a privacy-enhanced YouTube iframe only after pressing play.
 
-The page uses WOFF2 fonts, with the main heading and body fonts preloaded. Sized WebP copies of client logos and personal photos live in `site/assets/optimized/`; the original files are kept in `site/assets/`. Keep image dimensions in the HTML aligned with each file, and preserve the full-resolution hero portrait.
+The page uses WOFF2 fonts, with the main heading and body fonts preloaded. One Manrope variable font (the same 4.505 font version as the original files) supplies all body weights. Sized WebP copies of client logos and personal photos live in `site/assets/optimized/`; the original files are kept in `site/assets/`. Keep image dimensions in the HTML aligned with each file, and preserve the full-resolution hero portrait. To preview the production output, run `node scripts/build.mjs` and serve `dist/` instead of `site/`.
 
 Booking opens the GST Calendly event. Both WhatsApp links open the same chat; the floating button is green with a white icon and a visible label.
 
